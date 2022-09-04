@@ -1,3 +1,6 @@
+var buttonEl = document.querySelector("#start");
+console.log(buttonEl);
+
 var questions = [
     {
         title: "Commonly used data types DO NOT include:",
@@ -41,7 +44,6 @@ var penalty = 10;
 var ulCreate = document.createElement("ul");
 
 timer.addEventListener("click", function () {
-    
     if (holdInterval === 0) {
         holdInterval = setInterval(function () {
             secondsLeft--;
