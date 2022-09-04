@@ -7,7 +7,7 @@ clear.addEventListener("click", function() {
     location.reload();
 });
 
-view scores = localStorage.getItem("scores");
+var scores = localStorage.getItem("scores");
 scores = JSON.parse(scores);
 
 if(scores !== null) {
@@ -19,5 +19,5 @@ if(scores !== null) {
 }
 
 goBack.addEventListener("click", function (){
-    window.location.replace("./index.html")
+    window.location.replace("./index.html");
 });
